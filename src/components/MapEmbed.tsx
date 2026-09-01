@@ -1,10 +1,15 @@
-import { useTranslations } from 'next-intl';
-import { useMessages } from 'next-intl';
+import { useTranslations, useMessages, useLocale } from 'next-intl';
+import { siteConfig } from '@/config';
 
 export default function MapEmbed() {
   const t = useTranslations('mapSection');
   const messages = useMessages() as any;
-  const mapsLink = messages?.hero?.mapsLink || 'https://maps.app.goo.gl/UKL7jt52HVUDLHWp9';
+  const locale = useLocale();
+  const mapsLink = messages?.hero?.mapsLink || siteConfig.mapsLink;
+
+  // Precise Google Maps embed (pb=) for Youth Hill, language follows current locale
+  const mapLang = locale === 'bg' ? 'bg' : locale === 'en' ? 'en' : 'zh-CN';
+  const embedSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5262.349106828033!2d24.72856617756265!3d42.13687357121447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd03330f4efa7%3A0xf2352de478f65654!2sYouth%20Hill!5e1!3m2!1s${mapLang}!2s!4v1788265474845!5m2!1s${mapLang}!2s`;
 
   return (
     <section id="map" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -23,19 +28,15 @@ export default function MapEmbed() {
           className="map-container relative rounded-xl overflow-hidden"
           style={{ border: '1px solid var(--map-border)' }}
         >
-          {/*
-            NOTE: Google Maps attribution is hidden via CSS (.gm-style-cc, .gmnoprint).
-            This is for visual cleanliness only. Google's Terms of Service apply.
-          */}
           <iframe
-            src="https://maps.google.com/maps?q=Youth+Hill,+Plovdiv,+Bulgaria&output=embed"
+            src={embedSrc}
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps - Youth Hill"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="Google Maps - Youth Hill Plovdiv"
           />
         </div>
 

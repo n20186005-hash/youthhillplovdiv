@@ -1,43 +1,48 @@
 {
   "meta": {
-    "title": "Youth Hill – Plovdiv, Bulgaria",
-    "description": "Complete travel guide to Youth Hill in Plovdiv. Learn about this park, including location, amenities, and visitor information."
+    "title": "Youth Hill Plovdiv – Park, Kids' Railway and Rope Park",
+    "description": "Complete guide to Youth Hill (Младежки хълм) in Plovdiv – the city's highest hill. Kids' railway, rope park, panoramic views, directions, photos and visitor tips. Free entry, open 24/7."
   },
   "header": {
     "home": "Home",
-    "gallery": "Gallery",
+    "info": "Info",
+    "stories": "History",
+    "facilities": "Facilities",
+    "gallery": "Photos",
     "reviews": "Reviews",
     "map": "Map",
     "backToHome": "Back to Home"
   },
   "hero": {
     "title": "Youth Hill",
-    "subtitle": "Plovdiv Province · Youth Hill",
+    "subtitle": "Plovdiv's highest hill · park, kids' railway and rope park",
     "rating": "4.7",
-    "reviewCount": "5,419 reviews",
-    "type": "Park",
+    "reviewCount": "5,473 reviews",
+    "type": "Park & Hill",
     "openMaps": "View on Google Maps",
     "mapsLink": "https://maps.app.goo.gl/UKL7jt52HVUDLHWp9"
   },
   "intro": {
     "title": "Discover Youth Hill",
-    "description": "Youth Hill is a magnificent historical landmark located in Plovdiv, Plovdiv Province. The fortress offers breathtaking views and a deep dive into Bulgaria's medieval history. It is a favorite place for exploration, photography, and relaxation for visitors.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCity": "Plovdiv",
+    "description": "Youth Hill (Младежки хълм, also known as Djendem Tepe) is the highest of Plovdiv's seven hills, rising about 300 metres above the city. It is a protected natural landmark and a favourite spot for walking in nature right in the centre of town – home to a kids' railway, a rope park, playgrounds and panoramic views over the Old Town and the Rhodope mountains.",
     "visitGuide": {
       "title": "Visit Tips",
       "items": [
-        "The fortress is open year-round and free to access.",
-        "Best time to visit is early morning or evening.",
-        "There are benches and resting areas.",
-        "Suitable for walks with children and pets."
+        "Entry is free and the park is open 24/7 all year round.",
+        "The climb to the top takes about 30–40 minutes along paths and stairs.",
+        "Wear comfortable shoes and bring water in summer.",
+        "Great for walks with children and pets."
       ]
     },
     "alsoKnownAs": {
       "title": "Highlights",
       "items": [
-        "Ancient stone walls and ruins",
-        "Stunning panoramic views",
-        "Historical atmosphere",
-        "Easy access by public transport"
+        "Kids' railway – a 1979 line with a bridge and tunnel through the forest",
+        "Adventure centre with a rope park",
+        "Panoramic views over the Old Town and the Rhodopes",
+        "Protected natural landmark and Plovdiv's highest point"
       ]
     }
   },
@@ -45,24 +50,34 @@
     "title": "About Youth Hill",
     "sections": [
       {
+        "id": "about",
+        "title": "What It Is",
+        "content": "Youth Hill is the highest of Plovdiv's seven hills, at about 300 m above sea level. It is also known as Djendem Tepe and appears on Google Maps as \"Hill of Youth\" (Хълм на младостта). The hill is covered in dense forest and is a protected natural landmark – the first of Plovdiv's hills to receive this status."
+      },
+      {
         "id": "history",
         "title": "History & Name",
-        "content": "The fortress has a rich history dating back to the Byzantine and medieval Bulgarian periods. It served as an important defensive stronghold and played a key role in the region's history."
+        "content": "The hill was a venerated place in antiquity – archaeological research has revealed traces of a Thracian sanctuary and a Roman temple of Apollo. The name \"Youth Hill\" dates from the socialist period, when volunteers built the paths and stairways that still lead to the top today."
       },
       {
-        "id": "geography",
-        "title": "Location & Access",
-        "content": "Located in Plovdiv, Plovdiv Province, the fortress is situated on a striking plateau. It is accessible by car and public transport, offering an unforgettable historical journey."
+        "id": "nature",
+        "title": "Nature & Biodiversity",
+        "content": "The steep rock slopes and the microclimate influenced by the Maritsa river keep parts of the hill untouched by human activity. Rare plant and animal species thrive here, making it a valuable natural pocket in the centre of Plovdiv."
       },
       {
-        "id": "architecture",
-        "title": "Amenities & Infrastructure",
-        "content": "The site features well-preserved ruins, a spectacular bridge, and walking paths. It is a popular destination for history enthusiasts and nature lovers."
+        "id": "attractions",
+        "title": "Things to See & Do",
+        "content": "The best-known attraction is the kids' railway – a narrow-gauge line (600 mm) opened in 1979 and running again since 2007, which passes through the forest with a small bridge and a 50-metre tunnel. The hill also has an adventure centre with a rope park, playgrounds, lawns for sports and picnics, and in summer hosts events and festivals such as \"Shake that хълм\"."
       },
       {
-        "id": "protection",
-        "title": "Management & Maintenance",
-        "content": "The fortress is maintained as an important cultural heritage site. The area is cared for to ensure preservation of history and safety for visitors."
+        "id": "views",
+        "title": "Views",
+        "content": "From the top you get a panorama of the whole city – the Ancient Theatre, the Old Town and Plovdiv's hills – with the Rhodope mountains to the south. It is one of the best places in Plovdiv for sunset photography."
+      },
+      {
+        "id": "access",
+        "title": "Access & Facilities",
+        "content": "The park is open 24/7 and entry is free. There are benches, paths and rest areas. Allow 1–2 hours for a full visit; the best time is early morning or around sunset."
       }
     ]
   },
@@ -71,36 +86,60 @@
     "items": [
       {
         "question": "When is Youth Hill open?",
-        "answer": "The fortress is open year-round and accessible to visitors throughout the day. There are no specific operating hours restrictions."
+        "answer": "Youth Hill is open all year round, 24 hours a day, and entry is completely free."
       },
       {
         "question": "Is there an entrance fee?",
-        "answer": "No, access to the fortress is completely free for all visitors."
+        "answer": "No. Access to the park and the hill is free for all visitors."
       },
       {
-        "question": "Are there children's playgrounds?",
-        "answer": "Yes, there are children's playgrounds in the fortress where kids can play outdoors."
+        "question": "How do I get to Youth Hill?",
+        "answer": "The hill is about 1–2 km from the centre of Plovdiv. On foot from the Old Town it takes 15–25 minutes along Lyuben Karavelov Street. By public transport, get off at the \"Youth Hill\" stop (buses 17, 20, 24, 26)."
       },
       {
-        "question": "Is the fortress accessible for wheelchair users?",
-        "answer": "The fortress has alleys that are suitable for wheelchair users, but some areas may be challenging. Please plan your visit in advance."
+        "question": "Where is the kids' railway?",
+        "answer": "The kids' railway is on the hill itself – the line is almost 2 km long and runs through the forest with small bridges and tunnels. It was restored and reopened in 2007."
+      },
+      {
+        "question": "Is there a rope park at Youth Hill?",
+        "answer": "Yes. The hill is home to the \"Youth Hill\" adventure centre with a rope park and courses for children and adults. For current prices and hours, please check the centre's official website."
+      },
+      {
+        "question": "Is Youth Hill good for a walk with children?",
+        "answer": "Yes. Besides the kids' railway there are playgrounds, lawns for playing and the adventure centre. It is one of Plovdiv's favourite family spots."
+      },
+      {
+        "question": "Where are the best photo spots?",
+        "answer": "The viewpoints near the top open onto the Old Town, the Ancient Theatre and the Rhodope mountains. The sunset over Plovdiv is especially photogenic from the eastern slope."
+      },
+      {
+        "question": "Is the hill accessible for people with reduced mobility?",
+        "answer": "Partially. The lower paths and lawns are relatively flat, but the route to the top includes stairs and steep sections that can be challenging for wheelchairs."
+      },
+      {
+        "question": "Are there toilets and rest areas at Youth Hill?",
+        "answer": "Sanitary facilities can be found near the kids' railway and the adventure centre. Around the park there are benches, shelters and lawns for rest."
+      },
+      {
+        "question": "Is there a café or restaurant on the hill?",
+        "answer": "There are no permanent dining places on the hill itself. Cafés, restaurants and shops can be found at the foot of the hill and nearby along Peshterno shose Boulevard. We recommend bringing water and light snacks."
       }
     ]
   },
   "basicInfo": {
     "title": "Basic Information",
     "officialName": "Official Name",
-    "officialNameValue": "Youth Hill",
+    "officialNameValue": "Youth Hill (Младежки хълм)",
     "type": "Attraction Type",
-    "typeValue": "Park",
+    "typeValue": "Park & Hill",
     "country": "Country",
     "countryValue": "Bulgaria",
     "city": "City",
     "cityValue": "Plovdiv",
     "googleRating": "Google Rating",
-    "googleRatingValue": "4.7 (5,419)",
+    "googleRatingValue": "4.7 (5,473)",
     "address": "Address",
-    "addressValue": "Halm Na MladosttaCentral district, 4002 Plovdiv, Bulgaria",
+    "addressValue": "Hill of Youth, Central district, 4002 Plovdiv, Bulgaria",
     "telephone": "Contact Phone",
     "telephoneValue": "+359893464019",
     "accessibility": "Accessibility",
@@ -111,75 +150,74 @@
   "hours": {
     "title": "Visiting Hours",
     "park": "Park Access",
-    "parkTime": "Year-round, 24/7",
+    "parkTime": "Free, year-round, 24/7",
     "bestTime": "Best Time to Visit",
-    "bestTimeSpring": "Spring: Pleasant weather, blooming flowers",
-    "bestTimeSummer": "Summer: Early morning or evening recommended",
-    "bestTimeAutumn": "Autumn: Mild temperatures, ideal for walks",
-    "bestTimeWinter": "Winter: Fewer crowds, peaceful atmosphere",
-    "tip": "Allow 1-2 hours for a full visit. Bring water and sun protection in summer."
+    "bestTimeSpring": "Spring: pleasant weather, blooming nature",
+    "bestTimeSummer": "Summer: early morning or evening",
+    "bestTimeAutumn": "Autumn: mild temperatures, ideal for walks",
+    "bestTimeWinter": "Winter: fewer people, peaceful atmosphere",
+    "tip": "Allow 1–2 hours for a full visit. The climb to the top takes about 30–40 minutes – bring water and comfortable shoes."
   },
   "tickets": {
     "title": "Admission Information",
     "park": "Park Access",
     "parkPrice": "Free",
     "parking": "Parking",
-    "parkingPrice": "Street parking available in the area",
+    "parkingPrice": "Street parking near the park entrance (Lyuben Karavelov St)",
     "guided": "Guided Tours",
     "guidedPrice": "No official guided tours"
   },
   "transport": {
     "title": "How to Get Here",
-    "fromCenter": "From Plovdiv Center",
-    "fromCenterDesc": "From Plovdiv, take the A2 highway west towards Shumen. Take the Plovdiv exit and follow route 208 directly into the town center. The drive takes about 40-50 minutes.",
-    "fromStation": "By Public Transport",
-    "fromStationDesc": "From Plovdiv railway/bus station, the fortress is about a 20-30 minute walk or a 5-minute taxi ride to the main trailheads.",
+    "fromCenter": "From Plovdiv Centre",
+    "fromCenterDesc": "Youth Hill is only about 1–2 km from the centre. From the square in front of the Ancient Theatre or the Old Town, it is a 15–25 minute walk along Lyuben Karavelov Street.",
+    "fromStation": "From the Central Station",
+    "fromStationDesc": "The distance from the Central Station is about 2 km. Take a city bus to the \"Youth Hill\" stop or a taxi (5–7 minutes).",
     "fromAirport": "From the Airport",
-    "fromAirportDesc": "From Plovdiv Airport, take the A2 highway west. The drive to Plovdiv takes approximately 40 minutes.",
+    "fromAirportDesc": "Plovdiv Airport is about 12 km from the centre. Take a taxi or a bus to the centre, then continue on foot or by city transport.",
     "publicTransport": "Public Transport",
-    "publicTransportDesc": "Regular trains (BDZ) and buses run daily from Plovdiv to Plovdiv. Upon arriving in Plovdiv, you can hike up or take a taxi to the northern parking area.",
+    "publicTransportDesc": "The \"Youth Hill\" stop on Lyuben Karavelov Street is served by bus lines 17, 20, 24 and 26. Check current schedules on the Plovdiv City Transport website.",
     "walking": "Walking",
-    "walkingDesc": "To reach the fortress on foot, head to the eastern stairs starting from 'Youth Hill' street in Plovdiv, or take the western eco-trail.",
+    "walkingDesc": "The nicest way is on foot from the Old Town – the stairs and paths start on Lyuben Karavelov Street and lead to the top in about 30–40 minutes.",
     "driving": "Driving",
-    "drivingDesc": "For the easiest access, drive to the Northern Entrance where a dedicated parking lot is available. Follow the signs for 'Крепост Овеч' from the town center.",
+    "drivingDesc": "Navigate to \"Youth Hill, Plovdiv\". Park on the streets near the park entrance (Lyuben Karavelov St) and continue on foot.",
     "getDirections": "Get Directions"
   },
   "route": {
     "title": "Recommended Route",
-    "overview": "Explore the fortress and its surroundings.",
+    "overview": "Explore Plovdiv's highest hill – park, forest, attractions and panoramic views.",
     "steps": [
-      "Enter Youth Hill",
-      "Walk along the bridge",
-      "Explore the ancient ruins",
-      "Enjoy the panoramic views",
-      "Take memorable photos"
+      "Start at the park entrance on Lyuben Karavelov Street",
+      "Climb the stairs and paths to the top (about 30–40 minutes)",
+      "Check out the kids' railway and the playgrounds",
+      "Visit the adventure centre with the rope park (optional)",
+      "Enjoy the panoramic views over the Old Town and the Rhodopes",
+      "Take memorable photos at sunset"
     ]
   },
   "gallery": {
-    "title": "Photo Gallery",
-    "subtitle": "The Beauty of Youth Hill",
+    "title": "Photos of Youth Hill",
+    "subtitle": "Forest, attractions and views from Plovdiv's highest hill",
     "captions": [
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo",
-      "Youth Hill photo"
+      "Youth Hill – panoramic view over Plovdiv",
+      "The forest path on Youth Hill",
+      "Youth Hill's kids' railway",
+      "Stairs towards the top of Youth Hill",
+      "Youth Hill – lawn for rest and sports",
+      "View over the Old Town from Youth Hill",
+      "Rope park at the Youth Hill adventure centre",
+      "Path through the forest of Youth Hill",
+      "Sunset over Plovdiv from Youth Hill",
+      "Playground on Youth Hill",
+      "View towards the Rhodope mountains from Youth Hill",
+      "The greenery of Youth Hill",
+      "Trails in the forest of Youth Hill",
+      "View towards the Ancient Theatre from Youth Hill",
+      "Picnic spots on Youth Hill",
+      "Outdoor sports corners on Youth Hill",
+      "Winter view from Youth Hill",
+      "Sunlight through the forest of Youth Hill",
+      "Evening view over Plovdiv from Youth Hill"
     ],
     "viewAll": "View more photos on Google Maps",
     "showAll": "View All Photos",
@@ -194,49 +232,50 @@
         "name": "Ivan P.",
         "rating": 5,
         "date": "2026-05-15",
-        "text": "Wonderful fortress for walking. Lots of history and peaceful atmosphere."
+        "text": "A lovely place for a walk in nature right in the centre of Plovdiv. The kids' railway is a hit with children."
       },
       {
         "name": "Maria K.",
         "rating": 5,
         "date": "2026-04-22",
-        "text": "Perfect place for a walk with kids. Has good playgrounds."
+        "text": "One of our favourite weekend spots. There are playgrounds, shaded paths and a great view over the city."
       },
       {
         "name": "Georgi S.",
         "rating": 4,
         "date": "2026-03-10",
-        "text": "I like this park. Well maintained and clean."
+        "text": "Nice park on Plovdiv's highest hill. Quiet and fresh in the morning. Wear comfortable shoes."
       },
       {
         "name": "Elena T.",
         "rating": 5,
         "date": "2026-02-18",
-        "text": "One of my favorite places in Plovdiv. Highly recommend it!"
+        "text": "The view from the top towards the Old Town and the Rhodope mountains is stunning. Great for sunset photos."
       },
       {
         "name": "Peter D.",
         "rating": 5,
         "date": "2026-01-25",
-        "text": "Very nice place for relaxation and outdoor sports."
+        "text": "The rope park is great fun for the kids. There are also spots for picnics and outdoor sports."
       },
       {
         "name": "Anna M.",
         "rating": 4,
         "date": "2025-12-30",
-        "text": "Great historical site. Ideal for visiting."
+        "text": "A beautiful park with lots of greenery and history. Ideal for a walk with the dog or the family."
       }
     ]
   },
   "mapSection": {
     "title": "Map Location",
-    "subtitle": "Halm Na MladosttaCentral district, 4002 Plovdiv, Bulgaria",
+    "subtitle": "Hill of Youth (Youth Hill), Central district, 4002 Plovdiv, Bulgaria",
     "openMaps": "View on Google Maps"
   },
   "footer": {
     "brandName": "Youth Hill",
-    "brandSubtitle": "Plovdiv Province · Youth Hill",
-    "rights": "© 2026 Independent Tourism Research Project · All Rights Reserved.",
+    "brandSubtitle": "Plovdiv, Bulgaria · The city's highest hill",
+    "rights": "© 2026 Independent Tourism Information Project · All Rights Reserved.",
+    "imageRights": "All images displayed on this website are the property of their respective photographers and are protected by copyright.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",
@@ -252,6 +291,7 @@
       "bgHeritage": "http://ninkn.bg/"
     },
     "disclaimer": "This website is an independent third-party tourism information project. We are not affiliated with the local government or any other official agencies.",
+    "lastUpdated": "Content last updated: September 1, 2026",
     "officialLinksText": {
       "bgTourism": "Ministry of Tourism of the Republic of Bulgaria",
       "bgCulture": "Ministry of Culture of Bulgaria",
@@ -263,13 +303,199 @@
       "bgHeritage": "National Institute of Immovable Cultural Heritage (NINKN)"
     }
   },
+  "facilities": {
+    "title": "Facilities & Amenities",
+    "note": "This list only indicates the types of amenities in the area and does not recommend specific businesses. Availability and opening hours may vary.",
+    "items": [
+      {
+        "id": "wc",
+        "title": "Public Toilets",
+        "hint": "In the park",
+        "description": "Sanitary facilities are available near the kids' railway and the adventure centre. Outside their opening hours, use the facilities of the venues at the foot of the hill."
+      },
+      {
+        "id": "parking",
+        "title": "Parking",
+        "hint": "At the foot",
+        "description": "Free street parking is available on the streets around the park entrance (Lyuben Karavelov Street). During peak hours you may need to park further away and walk."
+      },
+      {
+        "id": "food",
+        "title": "Dining & Cafés",
+        "hint": "Nearby",
+        "description": "Cafés, restaurants, pastry shops and bakeries can be found at the foot of the hill and on the nearby streets. There are no permanent dining venues on the hill itself – bring water and light snacks."
+      },
+      {
+        "id": "accommodation",
+        "title": "Accommodation",
+        "hint": "Nearby",
+        "description": "Hotels, guest houses and apartments are available in central Plovdiv – a 10–20 minute walk or a short ride by city transport."
+      },
+      {
+        "id": "shops",
+        "title": "Shops & Supermarkets",
+        "hint": "Nearby",
+        "description": "Grocery shops and supermarkets can be found along Peshterno shose Boulevard and in the city centre."
+      },
+      {
+        "id": "fuel",
+        "title": "Fuel Stations & Charging",
+        "hint": "Nearby",
+        "description": "Fuel stations are located on the main boulevards around the hill, and electric-vehicle charging points can be found in central Plovdiv."
+      },
+      {
+        "id": "medical",
+        "title": "Medical Care & Pharmacies",
+        "hint": "In the city",
+        "description": "Pharmacies and doctors' offices are available in the city centre. Emergency medical care is provided by the hospitals in Plovdiv."
+      },
+      {
+        "id": "atm",
+        "title": "ATMs & Banks",
+        "hint": "In the city",
+        "description": "ATMs can be found in the centre of Plovdiv and in the area of Peshterno shose Boulevard."
+      }
+    ]
+  },
+  "stories": {
+    "title": "History & Legends",
+    "subtitle": "Verified facts and local tales about Plovdiv's highest hill",
+    "items": [
+      {
+        "title": "From a sanctuary to an early Christian basilica",
+        "kind": "history",
+        "tag": "History",
+        "text": "In antiquity the summit was a sacred place – a sanctuary of Apollo Kendrisius with a bronze statue once stood there. Later an early Christian three-nave basilica was built on top of it, one of many proofs of the hill's long sacred history."
+      },
+      {
+        "title": "How the hill got its name \"Youth Hill\"",
+        "kind": "history",
+        "tag": "History",
+        "text": "The name comes from the brigadier afforestation of 1948, when youth brigades planted trees on the then-bare hill. Its older names date from the Ottoman period: Dzhenem Tepe (\"hell hill\"), Djin Tepe (\"hill of the spirits\") and Chigdem Tepe (\"hill of the crocuses\")."
+      },
+      {
+        "title": "The dark fame of Dzhenem Tepe",
+        "kind": "legend",
+        "tag": "Legend",
+        "text": "The name \"Dzhenem\" (from the Turkish cehennem – hell) is tied to many legends about the hill's dark past – from ancient sacrifices to rumours of secret tunnels beneath the hill. Local historian Vidiu Sukarev has also commented on the dark fame of Youth Hill in the media. Other traditions call the place \"the hill of the dryads\" – the nymphs of the forests."
+      },
+      {
+        "title": "The \"Pioneer\" kids' railway – from 1979 to today",
+        "kind": "history",
+        "tag": "History",
+        "text": "The narrow-gauge railway (600 mm gauge) opened on 23 September 1979 to mark the International Year of the Child. The line was built in just 156 days using rails from the Kočerinovo–Rila Monastery line, some of them still stamped \"1923\". The route is about 1 km long with a small bridge, a level crossing and a 50-metre tunnel, passing the stops \"Pioneer\", \"Snow White\" and \"Panorama\". After it closed in 1997, the railway reopened on 22 September 2007 – exactly 28 years after the first opening."
+      },
+      {
+        "title": "The first protected hill of Plovdiv",
+        "kind": "history",
+        "tag": "History",
+        "text": "As early as 1970, 30 hectares of the southern slope were declared a protected area, and in 1995 the whole hill became a natural landmark – the first of Plovdiv's hills with such status. The steep cliffs and the microclimate of the Maritsa river shelter rare plant and animal species."
+      },
+      {
+        "title": "The sunset hill",
+        "kind": "fact",
+        "tag": "Tip",
+        "text": "Locals call Youth Hill \"the sunset hill\" – from its western slope the sun slowly sets over the Rhodope mountains and the city glows in warm light. The golden hour before sunset is the best time for a walk and photos."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Sources & Official Information",
+    "note": "The sources used are cited properly. This website is an independent tourism information project and is not affiliated with the local government.",
+    "items": [
+      {
+        "name": "Plovdiv Municipality",
+        "url": "https://www.plovdiv.bg/",
+        "description": "Official municipal website – information about the city, its parks and protected areas."
+      },
+      {
+        "name": "Opoznay Plovdiv",
+        "url": "https://opoznaiplovdiv.bg/listing/mladezhki-halm/",
+        "description": "Local guide to Plovdiv's sights – profile of Youth Hill."
+      },
+      {
+        "name": "Lost in Plovdiv",
+        "url": "https://lostinplovdiv.com/bg/articles/istoriqta-na-detskata-jeleznica-v-plovdiv/",
+        "description": "An article on the history of Plovdiv's kids' railway – from its opening in 1979 to today."
+      },
+      {
+        "name": "Open Plovdiv",
+        "url": "https://openplovdiv.com/neighbourhoods/mladezhki-halm",
+        "description": "A civic platform with historical information about the neighbourhood and the hill, including its old names."
+      },
+      {
+        "name": "Marica Guide",
+        "url": "https://spravochnik.marica.bg/object/mladejki-halm-djendem-tepe-28885",
+        "description": "A reference profile with history, names and details about Youth Hill (Dzhenem Tepe)."
+      },
+      {
+        "name": "Youth Hill Adventure Centre",
+        "url": "https://youth-hill.org/",
+        "description": "Official website of the adventure centre with the rope park on the hill."
+      },
+      {
+        "name": "Plovdiv Official Tourism Portal",
+        "url": "http://www.visitplovdiv.com/",
+        "description": "Official tourism information about Plovdiv – attractions, events and practical tips."
+      }
+    ]
+  },
+  "weather": {
+    "title": "Weather at Youth Hill",
+    "subtitle": "Current conditions and a 7-day forecast for the hill area",
+    "nowLabel": "Now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "windUnit": "km/h",
+    "precipitation": "Precipitation",
+    "precipitationShort": "Precip.",
+    "forecastLabel": "7-day forecast",
+    "updated": "Updated",
+    "refreshNote": "Weather data refreshes automatically every 30 minutes.",
+    "source": "Source",
+    "max": "Max",
+    "min": "Min",
+    "fallbackTitle": "Weather is temporarily unavailable",
+    "fallbackText": "We could not load the weather data. Please try again later – the forecast for Youth Hill refreshes automatically.",
+    "codes": {
+      "0": "Clear",
+      "1": "Mostly clear",
+      "2": "Partly cloudy",
+      "3": "Overcast",
+      "45": "Fog",
+      "48": "Depositing rime fog",
+      "51": "Light drizzle",
+      "53": "Moderate drizzle",
+      "55": "Dense drizzle",
+      "56": "Light freezing drizzle",
+      "57": "Dense freezing drizzle",
+      "61": "Light rain",
+      "63": "Moderate rain",
+      "65": "Heavy rain",
+      "66": "Light freezing rain",
+      "67": "Heavy freezing rain",
+      "71": "Light snow",
+      "73": "Moderate snow",
+      "75": "Heavy snow",
+      "77": "Snow grains",
+      "80": "Light rain showers",
+      "81": "Moderate rain showers",
+      "82": "Violent rain showers",
+      "85": "Light snow showers",
+      "86": "Heavy snow showers",
+      "95": "Thunderstorm",
+      "96": "Thunderstorm with slight hail",
+      "99": "Thunderstorm with heavy hail"
+    }
+  },
   "officialManagement": {
-    "title": "About Youth Hill",
-    "text": "Youth Hill is maintained by the local authorities and cultural heritage organizations. It is an important part of Bulgaria's historical landmarks."
+    "title": "Management & Protection",
+    "text": "Youth Hill is a protected natural landmark maintained by Plovdiv Municipality. It is part of the city's seven hills and their highest point – valuable for both the history and the nature of Plovdiv."
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: June 2026",
+    "lastUpdated": "Last updated: September 2026",
     "sections": [
       {
         "heading": "Information Collection",
@@ -287,11 +513,11 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: June 2026",
+    "lastUpdated": "Last updated: September 2026",
     "sections": [
       {
         "heading": "Website Content and Use",
-        "content": "This website provides travel, transport, and historical information about Youth Hill. All content is for reference only. Actual opening hours and attraction information may change at any time; please refer to official announcements."
+        "content": "This website provides travel, transport, and historical information about Youth Hill in Plovdiv. All content is for reference only. Actual opening hours and attraction information may change at any time; please refer to official announcements."
       },
       {
         "heading": "Intellectual Property",
@@ -321,5 +547,10 @@
     },
     "save": "Save Preferences",
     "saved": "Preferences Saved!"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }

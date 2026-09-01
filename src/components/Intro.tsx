@@ -1,15 +1,32 @@
 import { useTranslations, useMessages } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function Intro() {
   const t = useTranslations('intro');
+  const tHero = useTranslations('hero');
   const tOff = useTranslations('officialManagement');
   const messages = useMessages() as any;
   const items: string[] = messages?.intro?.visitGuide?.items || [];
   const alsoKnownAsItems: string[] = messages?.intro?.alsoKnownAs?.items || [];
 
   return (
-    <section className="section-padding">
+    <section id="info" className="section-padding" style={{ scrollMarginTop: '5rem' }}>
       <div className="max-w-4xl mx-auto">
+        {/* Breadcrumb: Youth Hill → Plovdiv → Home */}
+        <nav aria-label="Breadcrumb" className="mb-6">
+          <ol className="flex flex-wrap items-center gap-2 text-sm" style={{ color: 'var(--text-muted)' }}>
+            <li>
+              <Link href="/" className="hover:underline" style={{ color: 'var(--accent)' }}>
+                {t('breadcrumbHome')}
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>{t('breadcrumbCity')}</li>
+            <li aria-hidden="true">/</li>
+            <li className="font-medium" style={{ color: 'var(--text-secondary)' }}>{tHero('title')}</li>
+          </ol>
+        </nav>
+
         <h2
           className="font-display text-3xl sm:text-4xl font-semibold mb-6"
           style={{ color: 'var(--text-primary)' }}

@@ -10,8 +10,8 @@ export default function Hero() {
       {/* Background image slideshow */}
       <div className="absolute inset-0">
         <img
-          src="/gallery/youth-hill (1).jpg"
-          alt="Youth Hill"
+          src="/gallery/youth-hill-01.jpg"
+          alt={t('title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />

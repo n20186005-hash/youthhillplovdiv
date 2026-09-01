@@ -3,27 +3,10 @@
 import { useTranslations, useMessages } from 'next-intl';
 import { useState, useCallback } from 'react';
 
-const photos = [
-  { src: '/gallery/youth-hill (1).jpg', alt: 'Youth Hill Photo 1' },
-  { src: '/gallery/youth-hill (2).jpg', alt: 'Youth Hill Photo 2' },
-  { src: '/gallery/youth-hill (3).jpg', alt: 'Youth Hill Photo 3' },
-  { src: '/gallery/youth-hill (4).jpg', alt: 'Youth Hill Photo 4' },
-  { src: '/gallery/youth-hill (5).jpg', alt: 'Youth Hill Photo 5' },
-  { src: '/gallery/youth-hill (6).jpg', alt: 'Youth Hill Photo 6' },
-  { src: '/gallery/youth-hill (7).jpg', alt: 'Youth Hill Photo 7' },
-  { src: '/gallery/youth-hill (8).jpg', alt: 'Youth Hill Photo 8' },
-  { src: '/gallery/youth-hill (9).jpg', alt: 'Youth Hill Photo 9' },
-  { src: '/gallery/youth-hill (10).jpg', alt: 'Youth Hill Photo 10' },
-  { src: '/gallery/youth-hill (11).jpg', alt: 'Youth Hill Photo 11' },
-  { src: '/gallery/youth-hill (13).jpg', alt: 'Youth Hill Photo 12' },
-  { src: '/gallery/youth-hill (14).jpg', alt: 'Youth Hill Photo 13' },
-  { src: '/gallery/youth-hill (15).jpg', alt: 'Youth Hill Photo 14' },
-  { src: '/gallery/youth-hill (17).jpg', alt: 'Youth Hill Photo 15' },
-  { src: '/gallery/youth-hill (18).jpg', alt: 'Youth Hill Photo 16' },
-  { src: '/gallery/youth-hill (19).jpg', alt: 'Youth Hill Photo 17' },
-  { src: '/gallery/youth-hill (20).jpg', alt: 'Youth Hill Photo 18' },
-  { src: '/gallery/youth-hill (21).jpg', alt: 'Youth Hill Photo 19' }
-];
+const photos = Array.from({ length: 19 }, (_, i) => ({
+  src: `/gallery/youth-hill-${String(i + 1).padStart(2, '0')}.jpg`,
+  alt: `Youth Hill Plovdiv photo ${i + 1}`,
+}));
 
 export default function Gallery() {
   const t = useTranslations('gallery');

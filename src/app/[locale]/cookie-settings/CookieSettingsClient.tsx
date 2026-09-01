@@ -69,6 +69,8 @@ export default function CookieSettingsClient() {
 
   function handleSave() {
     localStorage.setItem('cookiePrefs', JSON.stringify({ analytics, marketing }));
+    // Notify layout scripts (e.g. GA4 gating) so analytics load immediately after opt-in
+    window.dispatchEvent(new CustomEvent('consent-updated'));
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   }
