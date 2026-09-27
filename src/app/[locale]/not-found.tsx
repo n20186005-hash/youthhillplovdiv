@@ -1,16 +1,10 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
-export default async function NotFound({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const validLocale = routing.locales.includes(locale as any) ? locale : routing.defaultLocale;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale: validLocale, namespace: 'notFound' });
+// Note: `not-found.tsx` does not receive route `params` in the App Router,
+// so the locale must come from the surrounding layout's intl context instead.
+export default function NotFound() {
+  const t = useTranslations('notFound');
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4" style={{ background: 'var(--bg-primary)' }}>
