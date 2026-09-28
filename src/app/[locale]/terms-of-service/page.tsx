@@ -2,6 +2,11 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations, useLocale, useMessages } from 'next-intl';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config';
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
@@ -10,10 +15,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const baseUrl = siteConfig.baseUrl;
-  const zhUrl = `${baseUrl}/zh/terms-of-service`;
-  const enUrl = `${baseUrl}/en/terms-of-service`;
-  const bgUrl = `${baseUrl}/bg/terms-of-service`;
-  const selfUrl = `${baseUrl}/${locale}/terms-of-service`;
+  const zhUrl = `${baseUrl}/zh/terms-of-service/`;
+  const enUrl = `${baseUrl}/en/terms-of-service/`;
+  const bgUrl = `${baseUrl}/bg/terms-of-service/`;
+  const selfUrl = `${baseUrl}/${locale}/terms-of-service/`;
 
   return {
     alternates: {
@@ -33,7 +38,7 @@ function TermsContent() {
   const ht = useTranslations('header');
   const locale = useLocale();
   const messages = useMessages() as any;
-  const homeHref = `/${locale}`;
+  const homeHref = `/${locale}/`;
   const sections = (messages?.terms?.sections || []) as Array<{ heading: string; content: string }>;
 
   return (

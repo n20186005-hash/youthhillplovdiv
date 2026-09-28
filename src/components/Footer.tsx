@@ -3,7 +3,7 @@ import { useTranslations, useLocale } from 'next-intl';
 export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
-  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const prefix = `/${locale}`;
 
   const officialLinks = t.raw('officialLinks') || {};
 
@@ -38,13 +38,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-wrap gap-4 text-sm mt-4 sm:mt-0">
-            <a href={`${prefix}/privacy-policy`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
+            <a href={`${prefix}/privacy-policy/`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
               {t('privacy')}
             </a>
-            <a href={`${prefix}/terms-of-service`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
+            <a href={`${prefix}/terms-of-service/`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
               {t('terms')}
             </a>
-            <a href={`${prefix}/cookie-settings`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
+            <a href={`${prefix}/cookie-settings/`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
               {t('cookies')}
             </a>
           </div>

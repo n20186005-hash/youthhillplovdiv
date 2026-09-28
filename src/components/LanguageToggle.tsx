@@ -59,10 +59,18 @@ export default function LanguageToggle() {
               key={loc}
               onClick={() => {
                 setOpen(false);
-                // Hard navigation to ensure locale switches properly and preserves hash
                 const hash = window.location.hash;
-                const newPath = pathname === '/' ? `/${loc}` : `/${loc}${pathname}`;
-                window.location.href = newPath + hash;
+                let base = pathname;
+                if (base.startsWith('/' + locale)) {
+                  base = base.slice(('/' + locale).length) || '/';
+                }
+                if (base === '/') {
+                  window.location.href = `/${loc}/` + hash;
+                } else {
+                  if (!base.startsWith('/')) base = '/' + base;
+                  if (!base.endsWith('/')) base = base + '/';
+                  window.location.href = `/${loc}${base}` + hash;
+                }
               }}
               className="block w-full text-left px-4 py-2.5 text-sm transition-colors"
               style={{

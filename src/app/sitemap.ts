@@ -19,12 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const page of pages) {
       const languages: Record<string, string> = {};
       for (const l of routing.locales) {
-        languages[l] = `${baseUrl}/${l}${page}`;
+        languages[l] = `${baseUrl}/${l}${page}/`;
       }
-      languages['x-default'] = `${baseUrl}/bg${page}`;
+      languages['x-default'] = `${baseUrl}/bg${page}/`;
 
       entries.push({
-        url: `${baseUrl}/${locale}${page}`,
+        url: `${baseUrl}/${locale}${page}/`,
         lastModified,
         changeFrequency: 'weekly',
         priority: page === '' ? (locale === 'bg' ? 1 : 0.9) : 0.5,

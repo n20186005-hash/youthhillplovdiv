@@ -28,7 +28,7 @@ export async function generateMetadata({
 
 async function SiteJsonLd({ locale }: { locale: string }) {
   const messages = (await import(`@/messages/${locale}.json`)).default;
-  const selfUrl = `${BASE_URL}/${locale}`;
+  const selfUrl = `${BASE_URL}/${locale}/`;
 
   const graph = {
     '@context': 'https://schema.org',

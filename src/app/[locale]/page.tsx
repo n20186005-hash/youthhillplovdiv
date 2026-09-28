@@ -35,12 +35,12 @@ export async function generateMetadata({
     title: messages.meta.title,
     description: messages.meta.description,
     alternates: {
-      canonical: `${BASE_URL}/${locale}`,
+      canonical: `${BASE_URL}/${locale}/`,
       languages: {
-        'bg': `${BASE_URL}/bg`,
-        'en': `${BASE_URL}/en`,
-        'zh': `${BASE_URL}/zh`,
-        'x-default': `${BASE_URL}/bg`,
+        'bg': `${BASE_URL}/bg/`,
+        'en': `${BASE_URL}/en/`,
+        'zh': `${BASE_URL}/zh/`,
+        'x-default': `${BASE_URL}/bg/`,
       },
     },
     openGraph: {
@@ -49,7 +49,7 @@ export async function generateMetadata({
       siteName: 'Youth Hill',
       locale: locale === 'zh' ? 'zh_CN' : locale === 'bg' ? 'bg_BG' : 'en_US',
       type: 'website',
-      url: `${BASE_URL}/${locale}`,
+      url: `${BASE_URL}/${locale}/`,
       images: [`${BASE_URL}/gallery/youth-hill-01.jpg`],
     },
     twitter: {
@@ -66,7 +66,7 @@ async function JsonLd({ locale }: { locale: string }) {
   const mapsLink = messages.hero?.mapsLink || siteConfig.mapsLink;
   const faqItems = (messages.faq?.items || []) as Array<{ question: string; answer: string }>;
   const cityName = locale === 'bg' ? 'Пловдив' : locale === 'en' ? 'Plovdiv' : '普罗夫迪夫';
-  const selfUrl = `${BASE_URL}/${locale}`;
+  const selfUrl = `${BASE_URL}/${locale}/`;
 
   const attraction = {
     '@context': 'https://schema.org',

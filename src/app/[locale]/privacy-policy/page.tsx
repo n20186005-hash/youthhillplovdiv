@@ -2,6 +2,11 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations, useLocale, useMessages } from 'next-intl';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config';
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
@@ -10,10 +15,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const baseUrl = siteConfig.baseUrl;
-  const zhUrl = `${baseUrl}/zh/privacy-policy`;
-  const enUrl = `${baseUrl}/en/privacy-policy`;
-  const bgUrl = `${baseUrl}/bg/privacy-policy`;
-  const selfUrl = `${baseUrl}/${locale}/privacy-policy`;
+  const zhUrl = `${baseUrl}/zh/privacy-policy/`;
+  const enUrl = `${baseUrl}/en/privacy-policy/`;
+  const bgUrl = `${baseUrl}/bg/privacy-policy/`;
+  const selfUrl = `${baseUrl}/${locale}/privacy-policy/`;
 
   return {
     alternates: {
@@ -33,7 +38,7 @@ function PrivacyContent() {
   const ht = useTranslations('header');
   const locale = useLocale();
   const messages = useMessages() as any;
-  const homeHref = `/${locale}`;
+  const homeHref = `/${locale}/`;
   const sections = (messages?.privacy?.sections || []) as Array<{ heading: string; content: string }>;
 
   return (
