@@ -1,13 +1,13 @@
-import { getTranslations } from 'next-intl/server';
-import type { ReactNode } from 'react';
+'use client';
 
-// Младежки хълм, Пловдив
+import { useTranslations } from 'next-intl';
+import type { ReactNode } from 'react';
+import { useEffect, useState } from 'react';
+
 const LATITUDE = 42.1368736;
 const LONGITUDE = 24.7311411;
-// Open-Meteo: безплатен API без API ключ, подходящ за нестопански проекти.
-// Данните се кешират на сървъра и се обновяват на всеки 30 минути (ISR revalidate).
-const REVALIDATE_SECONDS = 1800;
 const FORECAST_DAYS = 7;
+const STALE_MS = 30 * 60 * 1000;
 
 interface WeatherData {
   current: {
@@ -29,6 +29,35 @@ interface WeatherData {
   };
 }
 
+interface CachedWeather {
+  fetchedAt: number;
+  data: WeatherData;
+}
+
+const CACHE_KEY = 'youth-hill-weather-cache';
+
+function readCache(): WeatherData | null {
+  try {
+    if (typeof window === 'undefined') return null;
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as CachedWeather;
+    if (!parsed.data || !parsed.fetchedAt) return null;
+    if (Date.now() - parsed.fetchedAt > STALE_MS) return null;
+    return parsed.data;
+  } catch {
+    return null;
+  }
+}
+
+function writeCache(data: WeatherData) {
+  try {
+    if (typeof window === 'undefined') return;
+    const payload: CachedWeather = { fetchedAt: Date.now(), data };
+    localStorage.setItem(CACHE_KEY, JSON.stringify(payload));
+  } catch {}
+}
+
 async function fetchWeather(): Promise<WeatherData | null> {
   const params = new URLSearchParams({
     latitude: String(LATITUDE),
@@ -42,12 +71,16 @@ async function fetchWeather(): Promise<WeatherData | null> {
   });
 
   try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 8000);
     const res = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, {
-      next: { revalidate: REVALIDATE_SECONDS },
-      signal: AbortSignal.timeout(8000),
+      signal: controller.signal,
     });
+    clearTimeout(timer);
     if (!res.ok) return null;
-    return (await res.json()) as WeatherData;
+    const json = (await res.json()) as WeatherData;
+    writeCache(json);
+    return json;
   } catch {
     return null;
   }
@@ -192,9 +225,24 @@ const smallIcons = {
   ),
 };
 
-export default async function WeatherSection({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: 'weather' });
-  const data = await fetchWeather();
+export default function WeatherSection({ locale }: { locale: string }) {
+  const t = useTranslations('weather');
+  const [data, setData] = useState<WeatherData | null>(() => readCache());
+  const [loaded, setLoaded] = useState<boolean>(!!readCache());
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const result = await fetchWeather();
+      if (!cancelled) {
+        if (result) setData(result);
+        setLoaded(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const intlLocale = locale === 'bg' ? 'bg-BG' : locale === 'zh' ? 'zh-CN' : 'en-GB';
   const timeFmt = new Intl.DateTimeFormat(intlLocale, { hour: '2-digit', minute: '2-digit' });
@@ -218,7 +266,28 @@ export default async function WeatherSection({ locale }: { locale: string }) {
         </p>
         <div className="w-12 h-0.5 mb-10" style={{ background: 'var(--accent)' }} />
 
-        {!data ? (
+        {!loaded && !data ? (
+          <div
+            className="rounded-2xl border p-8 text-center"
+            style={{ background: 'var(--bg-tertiary)', borderColor: 'var(--border-color)' }}
+          >
+            <div
+              className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center animate-pulse"
+              style={{ background: 'var(--tag-bg)', color: 'var(--tag-text)' }}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <path d="M21 12a9 9 0 1 1-6.2-8.6" />
+                <path d="M21 3v6h-6" />
+              </svg>
+            </div>
+            <h3 className="font-display text-xl font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
+              {t('fallbackTitle')}
+            </h3>
+            <p className="text-sm max-w-xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
+              {t('fallbackText')}
+            </p>
+          </div>
+        ) : !data ? (
           <div
             className="rounded-2xl border p-8 text-center"
             style={{ background: 'var(--bg-tertiary)', borderColor: 'var(--border-color)' }}

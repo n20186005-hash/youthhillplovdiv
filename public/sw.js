@@ -1,6 +1,6 @@
 /* Service Worker – Youth Hill (Младежки хълм) PWA */
-const CACHE_NAME = 'youth-hill-pwa-v1';
-const CORE_ASSETS = ['/', '/bg', '/en', '/zh'];
+const CACHE_NAME = 'youth-hill-pwa-v2';
+const CORE_ASSETS = ['/', '/bg/', '/en/', '/zh/'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -38,7 +38,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() => {
-          if (request.mode === 'navigate') return caches.match('/bg');
+          if (request.mode === 'navigate') return caches.match('/bg/');
           return Response.error();
         });
     })
