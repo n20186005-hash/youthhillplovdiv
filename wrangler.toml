@@ -1,6 +1,10 @@
 name = "youthhillplovdiv"
 compatibility_date = "2026-09-26"
-pages_build_output_dir = "./out"
+main = "./src/worker.ts"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
 
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://youthhillplovdiv.com"
