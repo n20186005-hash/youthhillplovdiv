@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, routing, type Locale, useRouter } from '@/i18n/routing';
+import { routing, type Locale } from '@/i18n/routing';
 import { useState, useRef, useEffect } from 'react';
 
 const labels: Record<string, string> = {
@@ -12,8 +12,6 @@ const labels: Record<string, string> = {
 
 export default function LanguageToggle() {
   const locale = useLocale();
-  const pathname = usePathname();
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -26,6 +24,19 @@ export default function LanguageToggle() {
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
+
+  function switchLocale(loc: Locale) {
+    setOpen(false);
+    const hash = window.location.hash;
+    const raw = window.location.pathname;
+    const parts = raw.split('/').filter(Boolean);
+    if (parts.length > 0 && routing.locales.includes(parts[0] as Locale)) {
+      parts.shift();
+    }
+    const remainder = parts.length > 0 ? '/' + parts.join('/') : '';
+    const normalized = remainder && !remainder.endsWith('/') ? remainder + '/' : remainder;
+    window.location.href = `/${loc}${normalized || '/'}${normalized ? '' : ''}` + hash;
+  }
 
   return (
     <div ref={ref} className="relative">
@@ -57,21 +68,7 @@ export default function LanguageToggle() {
           {routing.locales.map((loc) => (
             <button
               key={loc}
-              onClick={() => {
-                setOpen(false);
-                const hash = window.location.hash;
-                let base = pathname;
-                if (base.startsWith('/' + locale)) {
-                  base = base.slice(('/' + locale).length) || '/';
-                }
-                if (base === '/') {
-                  window.location.href = `/${loc}/` + hash;
-                } else {
-                  if (!base.startsWith('/')) base = '/' + base;
-                  if (!base.endsWith('/')) base = base + '/';
-                  window.location.href = `/${loc}${base}` + hash;
-                }
-              }}
+              onClick={() => switchLocale(loc)}
               className="block w-full text-left px-4 py-2.5 text-sm transition-colors"
               style={{
                 color: loc === locale ? 'var(--accent)' : 'var(--text-primary)',
