@@ -3,8 +3,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig = {
-  outputFileTracingRoot: process.cwd(),
+  output: 'export',
   images: {
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https' as const, hostname: 'images.unsplash.com' },
       { protocol: 'https' as const, hostname: 'maps.google.com' },
@@ -12,6 +13,8 @@ const nextConfig = {
       { protocol: 'https' as const, hostname: '*.google.com' },
     ],
   },
+  trailingSlash: true,
+  skipTrailingSlashRedirect: false,
 };
 
 export default withNextIntl(nextConfig);

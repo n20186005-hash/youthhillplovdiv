@@ -1,0 +1,16 @@
+/*    /bg/:splat    302    Language=bg
+/*    /en/:splat    302    Language=en
+/*    /zh/:splat    302    Language=zh
+/    /bg/    301
+/bg    /bg/    301
+/en    /en/    301
+/zh    /zh/    301
+/bg/privacy-policy    /bg/privacy-policy/    301
+/en/privacy-policy    /en/privacy-policy/    301
+/zh/privacy-policy    /zh/privacy-policy/    301
+/bg/terms-of-service    /bg/terms-of-service/    301
+/en/terms-of-service    /en/terms-of-service/    301
+/zh/terms-of-service    /zh/terms-of-service/    301
+/bg/cookie-settings    /bg/cookie-settings/    301
+/en/cookie-settings    /en/cookie-settings/    301
+/zh/cookie-settings    /zh/cookie-settings/    301

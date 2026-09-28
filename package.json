@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "lint": "next lint",
-    "check:i18n": "node scripts/check-i18n.mjs"
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "build:cf": "next build",
+    "deploy:cf": "npm run build:cf && npx wrangler@latest pages deploy out --project-name=youthhillplovdiv --branch=main"
   },
   "dependencies": {
     "next": "^15.1.0",
@@ -16,6 +18,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@eslint/eslintrc": "^3.3.5",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",

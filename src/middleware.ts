@@ -7,6 +7,10 @@ export default createMiddleware({
 });
 
 export const config = {
-  // Skip all paths that should not be internationalized
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: [
+    '/',
+    '/(bg|en|zh)/:path*',
+    '/((?!api|_next|_vercel|_ipx|gallery|icons|sw\.js|manifest\.webmanifest|robots\.txt|sitemap\.xml|favicon\.ico|.*\\..*).*)'
+  ],
+  unstable_skipMiddleware: process.env.NEXT_OUTPUT === 'export',
 };
