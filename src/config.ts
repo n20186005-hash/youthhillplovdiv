@@ -3,7 +3,7 @@
  * Replace domain here only (e.g. before deployment) – all other files import from this module.
  */
 export const siteConfig = {
-  baseUrl: 'https://youthhillplovdiv.com',
+  baseUrl: 'https://www.youthhillplovdiv.com',
   siteName: 'Youth Hill',
   mapsLink: 'https://maps.app.goo.gl/UKL7jt52HVUDLHWp9',
   geo: {

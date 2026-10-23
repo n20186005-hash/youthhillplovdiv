@@ -7,4 +7,4 @@ directory = "./out"
 not_found_handling = "404-page"
 
 [vars]
-NEXT_PUBLIC_SITE_URL = "https://youthhillplovdiv.com"
+NEXT_PUBLIC_SITE_URL = "https://www.youthhillplovdiv.com"
