@@ -18,6 +18,7 @@ import MapEmbed from '@/components/MapEmbed';
 import FAQSection from '@/components/FAQSection';
 import SourcesSection from '@/components/SourcesSection';
 import Footer from '@/components/Footer';
+import TopicLinks from '@/components/TopicLinks';
 import { siteConfig } from '@/config';
 
 const BASE_URL = siteConfig.baseUrl;
@@ -194,6 +195,7 @@ export default async function HomePage({
         <Reviews />
         <FAQSection />
         <SourcesSection />
+        <TopicLinks locale={locale} />
         <MapEmbed />
       </main>
       <Footer />

@@ -1,12 +1,13 @@
 import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { siteConfig } from '@/config';
+import { TOPICS, getTopic, topicAlternates } from '@/data/topics';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.baseUrl;
-  const lastModified = new Date('2026-09-01');
+  const lastModified = new Date('2026-10-23');
 
   const entries: MetadataRoute.Sitemap = [];
 
@@ -35,6 +36,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       });
     }
+  }
+
+  // Topic (long-tail) pages
+  for (const topic of TOPICS) {
+    const localesWithContent = routing.locales.filter((l) => getTopic(topic.slug, l));
+    if (localesWithContent.length === 0) continue;
+    entries.push({
+      url: `${baseUrl}/${localesWithContent[0]}/${topic.slug}/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: topicAlternates(topic.slug, baseUrl),
+      },
+    });
   }
 
   return entries;

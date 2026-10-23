@@ -17,7 +17,7 @@
     "title": "Youth Hill",
     "subtitle": "Plovdiv's highest hill · park, kids' railway and rope park",
     "rating": "4.7",
-    "reviewCount": "5,473 reviews",
+    "reviewCount": "5,493 reviews",
     "type": "Park & Hill",
     "openMaps": "View on Google Maps",
     "mapsLink": "https://maps.app.goo.gl/UKL7jt52HVUDLHWp9"
@@ -26,7 +26,7 @@
     "title": "Discover Youth Hill",
     "breadcrumbHome": "Home",
     "breadcrumbCity": "Plovdiv",
-    "description": "Youth Hill (Младежки хълм, also known as Djendem Tepe) is the highest of Plovdiv's seven hills, rising about 300 metres above the city. It is a protected natural landmark and a favourite spot for walking in nature right in the centre of town – home to a kids' railway, a rope park, playgrounds and panoramic views over the Old Town and the Rhodope mountains.",
+    "description": "Youth Hill (Младежки хълм, also known as Djendem Tepe) is the highest of Plovdiv's seven hills, at an altitude of 285.5 m above sea level (the highest point of the city). Its relative height above the surrounding neighbourhoods is smaller. It is a protected natural landmark and a favourite spot for walking in nature right in the centre of town – home to a kids' railway, a rope park, playgrounds and panoramic views over the Old Town and the Rhodope mountains.",
     "visitGuide": {
       "title": "Visit Tips",
       "items": [
@@ -52,7 +52,7 @@
       {
         "id": "about",
         "title": "What It Is",
-        "content": "Youth Hill is the highest of Plovdiv's seven hills, at about 300 m above sea level. It is also known as Djendem Tepe and appears on Google Maps as \"Hill of Youth\" (Хълм на младостта). The hill is covered in dense forest and is a protected natural landmark – the first of Plovdiv's hills to receive this status."
+        "content": "Youth Hill is the highest of Plovdiv's seven hills, at 285.5 m above sea level (the highest point of the city). It is also known as Djendem Tepe and appears on Google Maps as \"Hill of Youth\" (Хълм на младостта). The hill is covered in dense forest and is a protected natural landmark – the first of Plovdiv's hills to receive this status."
       },
       {
         "id": "history",
@@ -98,7 +98,7 @@
       },
       {
         "question": "Where is the kids' railway?",
-        "answer": "The kids' railway is on the hill itself – the line is almost 2 km long and runs through the forest with small bridges and tunnels. It was restored and reopened in 2007."
+        "answer": "The kids' railway is on the hill itself – the line is about 1 km long and runs through the forest with small bridges and tunnels. It was restored and reopened in 2007."
       },
       {
         "question": "Is there a rope park at Youth Hill?",
@@ -110,7 +110,7 @@
       },
       {
         "question": "Where are the best photo spots?",
-        "answer": "The viewpoints near the top open onto the Old Town, the Ancient Theatre and the Rhodope mountains. The sunset over Plovdiv is especially photogenic from the eastern slope."
+        "answer": "The viewpoints near the top open onto the Old Town, the Ancient Theatre and the Rhodope mountains. The sunset over Plovdiv is especially photogenic from the western slope."
       },
       {
         "question": "Is the hill accessible for people with reduced mobility?",
@@ -137,7 +137,7 @@
     "city": "City",
     "cityValue": "Plovdiv",
     "googleRating": "Google Rating",
-    "googleRatingValue": "4.7 (5,473)",
+    "googleRatingValue": "4.7 (5,493)",
     "address": "Address",
     "addressValue": "Hill of Youth, Central district, 4002 Plovdiv, Bulgaria",
     "telephone": "Contact Phone",
@@ -187,12 +187,12 @@
     "title": "Recommended Route",
     "overview": "Explore Plovdiv's highest hill – park, forest, attractions and panoramic views.",
     "steps": [
-      "Start at the park entrance on Lyuben Karavelov Street",
-      "Climb the stairs and paths to the top (about 30–40 minutes)",
-      "Check out the kids' railway and the playgrounds",
-      "Visit the adventure centre with the rope park (optional)",
-      "Enjoy the panoramic views over the Old Town and the Rhodopes",
-      "Take memorable photos at sunset"
+      "Start at the pedestrian park entrance on Lyuben Karavelov Street.",
+      "If you want the kids' railway, start at Pioneer station at the foot of the hill – a separate navigation point from the pedestrian entrance. The train passes a bridge and tunnel to Panorama station.",
+      "Visit the adventure centre with the rope park at the foot (optional).",
+      "Climb the stairs and paths to the top (about 30–40 minutes).",
+      "Enjoy the panoramic views over the Old Town and the Rhodopes.",
+      "Take memorable photos at sunset from the western slope."
     ]
   },
   "gallery": {
@@ -227,44 +227,7 @@
     "title": "Visitor Reviews",
     "declaration": "Reviews can be viewed via Google Maps.",
     "moreReviews": "View more reviews on Google Maps",
-    "items": [
-      {
-        "name": "Ivan P.",
-        "rating": 5,
-        "date": "2026-05-15",
-        "text": "A lovely place for a walk in nature right in the centre of Plovdiv. The kids' railway is a hit with children."
-      },
-      {
-        "name": "Maria K.",
-        "rating": 5,
-        "date": "2026-04-22",
-        "text": "One of our favourite weekend spots. There are playgrounds, shaded paths and a great view over the city."
-      },
-      {
-        "name": "Georgi S.",
-        "rating": 4,
-        "date": "2026-03-10",
-        "text": "Nice park on Plovdiv's highest hill. Quiet and fresh in the morning. Wear comfortable shoes."
-      },
-      {
-        "name": "Elena T.",
-        "rating": 5,
-        "date": "2026-02-18",
-        "text": "The view from the top towards the Old Town and the Rhodope mountains is stunning. Great for sunset photos."
-      },
-      {
-        "name": "Peter D.",
-        "rating": 5,
-        "date": "2026-01-25",
-        "text": "The rope park is great fun for the kids. There are also spots for picnics and outdoor sports."
-      },
-      {
-        "name": "Anna M.",
-        "rating": 4,
-        "date": "2025-12-30",
-        "text": "A beautiful park with lots of greenery and history. Ideal for a walk with the dog or the family."
-      }
-    ]
+    "items": []
   },
   "mapSection": {
     "title": "Map Location",
@@ -291,7 +254,7 @@
       "bgHeritage": "http://ninkn.bg/"
     },
     "disclaimer": "This website is an independent third-party tourism information project. We are not affiliated with the local government or any other official agencies.",
-    "lastUpdated": "Content last updated: September 1, 2026",
+    "lastUpdated": "Content last updated: October 23, 2026",
     "officialLinksText": {
       "bgTourism": "Ministry of Tourism of the Republic of Bulgaria",
       "bgCulture": "Ministry of Culture of Bulgaria",
@@ -495,7 +458,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: September 2026",
+    "lastUpdated": "Last updated: October 2026",
     "sections": [
       {
         "heading": "Information Collection",
@@ -513,7 +476,7 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: September 2026",
+    "lastUpdated": "Last updated: October 2026",
     "sections": [
       {
         "heading": "Website Content and Use",
